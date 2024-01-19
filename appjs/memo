@@ -1,0 +1,28 @@
+import React, { memo, useState } from 'react'
+
+function App() {
+    const [count,setCount]=useState(1);
+
+
+  return (
+    <div>
+        <h1>react Memo</h1>
+        <button onClick={()=>{setCount(count+1)}}>Clicke to increase {count}</button>
+        <MemoizedChild p={[]}/>
+    </div>
+  )
+}
+
+const Child=()=>{
+    console.log("child component render");
+    return(
+        <div>
+            child Component
+
+        </div>
+    )
+}
+const MemoizedChild = memo(Child,function(nextProps,prevProps){
+    return true;
+});
+export default App
