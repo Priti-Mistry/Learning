@@ -1,0 +1,47 @@
+# GET http://localhost:5000/post/Id/2
+
+# POST http://localhost:5000/post
+# Content-Type: application/json
+
+# {
+#     "title": "sample",
+#     "postText": "Wed, 21 Oct 2015 18:27:50 GMT",
+#     "username":"root"
+# }
+
+
+
+# GET http://localhost:5000/post
+
+
+# POST http://localhost:5000/comments
+# Content-Type: application/json
+
+# {
+#     "comment": "comments",
+#     "PostId": 3
+# }
+
+# GET http://localhost:5000/comments/Id/3
+
+# POST  http://localhost:5000/users
+# Content-Type: application/json
+
+# {
+#     "username": "user234",
+#     "password": "user@123"
+# }
+
+###
+POST  http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "username": "user23455",
+    "password": "user@123erer"
+}
+
+###
+GET http://127.0.0.1:5000/post/user/1
+
+# $2b$10$wpj52rAIDFw7R5jWfVC8QO8Ip.VIjAiegyLLQwVhD7YhPrQC8k2pK"

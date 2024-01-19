@@ -1,0 +1,17 @@
+POST http://127.0.0.1:5000/signup
+content-type: application/json
+
+{
+    "username": "sample",
+    "email": "sample@gamil.com",
+    "password":"12356"
+}
+
+###
+POST http://localhost:5000/signin
+content-type:application/json
+
+{
+    "email":"sample1@gamil.com",
+    "password":"12356"
+}
